@@ -8,7 +8,7 @@ from .models import Task
 
 def task_list(request):
     tasks = Task.objects.all()
-    return render(request, 'tasks/task_list.html', {'tasks': tasks})
+    return render(request, 'tasks/task_list.html', {'todo_tasks': tasks})
 @login_required
 
 def task_detail(request, pk):
