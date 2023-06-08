@@ -1,0 +1,242 @@
+{% extends 'core/base.html'%}
+
+{%block title%}BAlDR CRM{%endblock%}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Мой одностраничный сайт</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		header {
+			background-color: #333;
+			color: white;
+			padding: 50px;
+			text-align: center;
+		}
+		h1 {
+			margin: 5;
+			font-size: 460px;
+			line-height: 1.5;
+		}
+		section {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 40px;
+			background-color: #fff;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+			border-radius: 10px;
+			text-align: justify;
+			line-height: 1.5;
+			position: relative;
+			top: -50px;
+		}
+		section::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: -50px;
+			left: 50%;
+			width: 0;
+			height: 0;
+			
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			transform: translateX(-50%);
+		}
+		section h2 {
+			margin-top: 0;
+			color: #333;
+			font-size: 28px;
+			line-height: 1.5;
+			text-align: center;
+		}
+		section p {
+			color: #666;
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		section ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		section li {
+			width: calc(33.3% - 20px);
+			margin-bottom: 40px;
+			background-color: #f9f9f9;
+			border-radius: 40px;
+			box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.2);
+			padding: 20px;
+			text-align: center;
+		}
+		section li h3 {
+			margin-top: 0;
+			color: #333;
+			font-size: 24px;
+			line-height: 1.5;
+		}
+		section li p {
+			color: #666;
+			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 0;
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+
+	</header>
+	<section>
+		<h2>BaldrCRM - помогает бизнесу работать.</h2>
+		<p>
+			CRM-система — базовый инструмент для автоматизации продаж и маркетинга.
+			Ведите всю клиентскую базу в одном месте.
+		</p>
+		<ul>
+			<li>
+				<h3>Заявки</h3>
+				<p>Сохраняйте данные о ваших потенциальных заказчиках</p>
+			</li>
+			<li>
+				<h3>Конвертация заявок в клиентов</h3>
+                <p>Закрывайте ваши заявки и не тратьте время на повторные обзвоны</p>
+		</li>
+		<li>
+			<h3>Удобная панель инструментов</h3>
+			<p>Следите за вашими клиентами и заявками, так вы точно не потеряетесь!</p>
+		</li>
+		<li>
+			<h3>Диалог с заказчиком</h3>
+			<p>Сохраняйте диалоги с вашими клиентами и напомните себе о нем</p>
+		</li>
+		<li>
+			<h3>Удобный интерфейс</h3>
+			<p>Теперь вам не потребуется тратить большое количество времени на поиск нужных функций.
+				Все под рукой!
+			</p>
+		</li>
+		<li>
+			<h3>Доска задач</h3>
+			<p>Напишите задачи для вашей команды и следите за их выполнением!</p>
+		</li>
+	</ul>
+</section>
+ 
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind CSS Demo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.4/tailwind.min.css">
+</head>
+<body>
+
+<div class="bg-gray-900 p-6 rounded-lg shadow-lg text-white">
+  <h1 class="text-3xl font-bold mb-2">Познакомьтесь с нашей командой</h1>
+  <p class="mb-4">В нашей команде работают только высококлассные специалисты, вы можете рассчитывать на их поддежку в любое время!</p>
+
+  <a href="{% url 'about' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Узнать больше! </a>
+</div>
+
+
+  
+  <style>
+  .team {
+	background-color: #f8f8f8;
+	padding: 30px;
+	text-align: center;
+  }
+  
+  .member {
+	display: inline-block;
+	margin: 20px;
+	width: 200px;
+  }
+  
+  .member img {
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+  }
+  
+  .member h3 {
+	margin-top: 10px;
+	font-size: 18px;
+  }
+  
+  .member p {
+	margin-top: 5px;
+	font-size: 14px;
+  }
+
+  h3 {
+			margin-top: 0;
+			color: #333;
+			font-size: 28px;
+			line-height: 1.5;
+			text-align: center;
+		}
+
+  </style>
+ <div class="team">
+	<h2 class="py-2 px-4 bg-indigo-400 rounded-xl text-white">Наша команда</h2>
+	
+	<div class="member">
+	  <img src="https://img.championat.com/s/735x490/news/big/k/v/kak-vygljadit-zvezda-bodibildinga-90-h-shon-rej_16051109802127572097.jpg" alt="Имя члена команды 1">
+	  <h3>Данил Решетников</h3>
+	  <p>Генеральный директор</p>
+	  <blockquote>
+		<p class="text-lg font-medium">
+		  “Для меня простота - залог успеха”
+		</p>
+	  </blockquote>
+	</div>
+	
+	<div class="member">
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Macaca_nigra_self-portrait_large.jpg/220px-Macaca_nigra_self-portrait_large.jpg" alt="Имя члена команды 2">
+	  <h3>Пашалы Артур</h3>
+	  <p>Senior Backend Developer</p>
+	  <blockquote>
+		<p class="text-lg font-medium">
+		  “Я с рождения был крутым”
+		</p>
+	  </blockquote>
+	</div>
+	<div class="member">
+		<img src="data:image/jpeg;base64,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" alt="Имя члена команды 2">
+		<h3>Арсений Филиппов</h3>
+		<p>Senior Frontend Developer</p>
+		<blockquote>
+			<p class="text-lg font-medium">
+			  “снаружи веселый внутри грустный пасередине катлета сыр и памидоры”
+			</p>
+		  </blockquote>
+	  </div>
+	
+	<!-- и так далее -->
+	
+  </div>
+  
+  
+  
+{% endblock %}
+
+
+
+    
+  
