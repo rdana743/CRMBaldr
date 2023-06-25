@@ -22,9 +22,9 @@
         
         <hr class="my-4">
 
-        <a href=" " class="py-2 px-4 rounded-xl bg-blue-400 text-white">Изменить</a>
+        <a href=" {% url 'clients_edit' client.id %} " class="py-2 px-4 rounded-xl bg-blue-400 text-white">Изменить</a>
         <a href="{% url 'clients_delete' client.id %}" class="py-2 px-4 rounded-xl bg-red-600 text-white">Удалить пользователя</a>
-        <a href="{% url 'clients_edit' client.id %}" class="py-2 px-4 rounded-xl bg-blue-400 text-white">Сообщения</a>
+        
         <hr class="my-4">
 
         <a href="{% url 'clients_list' %}">Назад</a>

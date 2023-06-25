@@ -3,8 +3,9 @@
 {% block title %} Диалог {% endblock %}
 
 {% block content %}
+<div class="bg-no-repeat bg-cover bg-center h-screen" style="background-image: url('https://phonoteka.org/uploads/posts/2021-04/1618314252_5-phonoteka_org-p-oblaka-fon-6.jpg');">
     <div class = "py-6 px-6">
-        <h1 class="text-xl"> Диалог </h1>
+        <h1 class="text-xl"> Изменить </h1>
 
         <form method="post" action=".">
             {% csrf_token %}
@@ -12,5 +13,6 @@
             <button class="py-4 px-8 bg-teal-500 text-white rounded-xl">Отправить</button>
         </form>
     </div>
+
 
 {% endblock %}
